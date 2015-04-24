@@ -3,7 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('aboutme.jade', { title: 'About Me' });
+});
+
+router.get('/about', function(req, res, next) {
+  res.render('aboutme', { title: 'About Me' });
+});
+
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Contact' });
 });
 
 router.get('/helloworld', function(req, res) {

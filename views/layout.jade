@@ -1,7 +1,19 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.styl')
-  body
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+	body
+		div#cssmenu
+			ul#box
+				li
+					a(href="/") About Me
+				li
+					a(href="/about") About
+				li
+					a(href="/projects") Projects
+				li 
+					a(href="/contact") Contact
+
+		block content
