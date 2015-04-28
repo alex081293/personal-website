@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	div#contactBox
+		form(name="contact", action="/", method="post")
+			p b Name: 
+			input(type="text", name="name")
+			p Company: 
+			input(type="text", name="company")
+			p Email: 
+			input(type="email", name="email")
+			p Phone Number: 
+			input(type="tel", name="phone")
+			p Message: 
+			input(type="text", name="message")

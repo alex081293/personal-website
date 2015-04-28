@@ -1,6 +1,16 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: rgba(126,179,86,1);
+  background: -moz-linear-gradient(left, rgba(126,179,86,1) 0%, rgba(126,179,86,1) 41%, rgba(66,136,12,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(126,179,86,1)), color-stop(41%, rgba(126,179,86,1)), color-stop(100%, rgba(66,136,12,1)));
+  background: -webkit-linear-gradient(left, rgba(126,179,86,1) 0%, rgba(126,179,86,1) 41%, rgba(66,136,12,1) 100%);
+  background: -o-linear-gradient(left, rgba(126,179,86,1) 0%, rgba(126,179,86,1) 41%, rgba(66,136,12,1) 100%);
+  background: -ms-linear-gradient(left, rgba(126,179,86,1) 0%, rgba(126,179,86,1) 41%, rgba(66,136,12,1) 100%);
+  background: linear-gradient(to right, rgba(126,179,86,1) 0%, rgba(126,179,86,1) 41%, rgba(66,136,12,1) 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7eb356', endColorstr='#42880c', GradientType=1 );
+
 }
 
 a {
@@ -9,8 +19,14 @@ a {
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {
-  background: #86C85D;
-  width: auto;
+  background: #ADC85D;
+  margin-top:2%;
+  width: 41%;
+  margin-right:11%;
+  float: right;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 #cssmenu ul {
   list-style: none;
@@ -128,5 +144,19 @@ a {
   }
 }
 
+#mainContent {
+  background: white;
+  width:70%;
+  margin-left:13%;
+  margin-right:15%;
+  padding-top:40px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
 
-
+#info {
+  margin-left:2%;
+  margin-bottom: 2%;
+  width: 30%;
+}
